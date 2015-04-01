@@ -15,41 +15,33 @@ import java.util.Scanner;
 
 public class LinearSearch {
 
-    private ArrayList<Integer> integerArray;
 
-    public LinearSearch() {
+    public static ArrayList<Integer> getIntArray() {                // populates an ArrayList with less than 100 random integers less than 100
+        ArrayList<Integer> intArray = new ArrayList<Integer>();
         Random rand = new Random();
-        this.integerArray = new ArrayList<Integer>();
+
         int size = rand.nextInt(100);
-
-        for (int i = 0; i < size; i++) {
-            this.integerArray.add(rand.nextInt(100));
-        }
+        for (int i = 0; i < size; i++) { intArray.add(rand.nextInt(100)); }
+        return intArray;
 
     }
 
-    public ArrayList<Integer> getIntegerArray() {
-        return this.integerArray;
-    }
-
-    public int search(int x) {
-        return this.integerArray.indexOf(x);
+    public static int search(ArrayList<Integer> alist, int x) {
+        return alist.indexOf(x);                                 // searches the ArrayList for the first index of x
     }
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        LinearSearch intArray = new LinearSearch();
+        ArrayList<Integer> intArray = getIntArray();
+        System.out.println(intArray);
 
-        System.out.println(intArray.getIntegerArray());
         while (true) {
             System.out.println("Enter an integer between 0 and 100 to find its index in the list:");
             int x = scanner.nextInt();
-            int indexOfX = intArray.search(x);
+            int indexOfX = search(intArray, x);
 
-            if (indexOfX != -1)
-                System.out.println(x + " is at index " + indexOfX + ".");
-            else
-                System.out.println(x + " isn't in the list.");
+            if (indexOfX != -1) { System.out.println(x + " is at index " + indexOfX + ".\n"); }
+            else { System.out.println(x + " isn't in the list.\n"); }
 
         }
 
