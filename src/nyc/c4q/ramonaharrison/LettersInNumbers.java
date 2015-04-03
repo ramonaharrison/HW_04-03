@@ -17,8 +17,7 @@ public class LettersInNumbers {
         int hundred =  7;
         int thousand = 8;
         int and =      3;
-
-        int total = 0;
+        int total =    0;
         int i;
 
             if (n == 1000) {
