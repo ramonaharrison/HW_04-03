@@ -10,7 +10,6 @@ import java.util.Scanner;
  * Ramona Harrison
  * DistributionCalculator.java
  * Calculates the distribution of alphabetic characters in a text file
- *
  */
 
 public class DistributionCalculator {

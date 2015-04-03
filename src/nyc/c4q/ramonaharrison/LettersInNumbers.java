@@ -4,7 +4,7 @@ package nyc.c4q.ramonaharrison;
  * Access Code 2.1
  * Ramona Harrison
  * LettersInNumbers.java
- * Total number of
+ * Total number of letters in 'written out' numbers from 1 to 1000
  */
 
 public class LettersInNumbers {
@@ -20,7 +20,6 @@ public class LettersInNumbers {
 
         int total = 0;
         int i;
-
 
             if (n == 1000) {
                 total = digits[1] + thousand;
@@ -62,7 +61,6 @@ public class LettersInNumbers {
         for (int i = 0; i <= 1000; i++) {
             sum += countLetters(i);
         }
-
         System.out.println("The total is: " + sum);
     }
 

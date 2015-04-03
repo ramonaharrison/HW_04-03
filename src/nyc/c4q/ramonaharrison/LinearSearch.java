@@ -12,9 +12,7 @@ import java.util.Scanner;
  * to search for an integer and find its index in the array.
  */
 
-
 public class LinearSearch {
-
 
     public static ArrayList<Integer> getIntArray() {                // populates an ArrayList with less than 100 random integers less than 100
         ArrayList<Integer> intArray = new ArrayList<Integer>();

@@ -8,7 +8,6 @@ import java.net.URL;
  * Ramona Harrison
  * WebPageSanitizer.java
  * This class removes all script tags (and encapsulated information) from an HTML string
- *
  */
 
 public class WebPageSanitizer {
@@ -43,10 +42,6 @@ public class WebPageSanitizer {
         return HTTP.get(url);
 
     }
-
-
-
-
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);                     // accepts user input for simplified testing
